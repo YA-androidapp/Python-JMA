@@ -7,18 +7,15 @@ import os
 import requests
 import sys
 
-from const import JMA_ICONS, JMA_ICON_BASEURL, JMA_TELOPS
+from const import JMA_ICON_BASEURL, JMA_ICONS, JMA_JSON_BASEURL, JMA_TELOPS
 
-JSON_URL = 'https://www.jma.go.jp/bosai/forecast/data/forecast/010000.json'
+JSON_URL = JMA_JSON_BASEURL + '010000.json'
 RESULT_FILE_PATH = 'result.txt'
 
 
 def preparation():
     if os.path.isfile(RESULT_FILE_PATH):
-        print('REMOVE')
         os.remove(RESULT_FILE_PATH)
-    else:
-        print('NOT FOUND')
 
 
 def main():
