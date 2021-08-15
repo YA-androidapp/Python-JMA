@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>JMA</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        img {
+            height: 1em;
+        }
+
+        table {
+            border-width: 0;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        td {
+            border-width: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        th {
+            background-color: lightskyblue;
+            border-width: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        tr {
+            border-width: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .centering {
+            text-align: center;
+        }
+
+        .left {
+            width: 10px;
+        }
+
+        .temp-null {
+            color: gray;
+        }
+
+        .temp-30,
+        .temp-31,
+        .temp-32,
+        .temp-33,
+        .temp-34 {
+            color: red;
+        }
+
+        .temp-35,
+        .temp-36,
+        .temp-37,
+        .temp-38,
+        .temp-39 {
+            color: purple;
+        }
+
+        .row-te {
+            background-color: lightcyan;
+            font-size: small;
+        }
+
+        .row-wc {
+            background-color: azure;
+        }
+
+        .white-bg {
+            background-color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        {{ results | safe }}
+    </table>
+</body>
+
+</html>
